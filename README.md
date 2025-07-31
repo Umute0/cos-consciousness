@@ -1,9 +1,41 @@
-# cos-consciousness
-Open-source simulation of consciousness protocol with neural networks and EEG integration.
 # COS-Consciousness
 
-**Developed by (@Umute0)**  
-COS (Consciousness Simulation Protocol v1.0) is an open-source framework for modeling consciousness using a cyclic, layered information processing model. It integrates neural networks and EEG data to simulate continuity and self-awareness. Sharedfor the community to try, test, and contribute!
+**Developed by Umute0 with ai
+
+## Mathematical Foundations of COS-Consciousness
+
+COS (Consciousness Simulation Protocol v1.0) is an open-source framework designed to model consciousness through a cyclic, layered information processing paradigm. It draws inspiration from the phenomenological principle of temporal continuity, encapsulated in the phrase "Don't forget to return to this point." The protocol integrates neuroscience (EEG signals), artificial intelligence (neural networks), and philosophy (theories of consciousness) into a mathematically rigorous model.
+
+### Core Model
+The COS protocol simulates consciousness via a multi-agent system with \( N \) layers, where each layer \( k \) computes a "yank" value \( Y_k \) based on the previous layer's output and an external input (e.g., synthetic EEG signals). The central state \( C \) is updated cyclically to maintain continuity, inspired by cortical-thalamic feedback loops. Mathematically:
+
+- **Layer Update**: For each agent \( i \) and layer \( k \), the yank \( Y_k \) is computed as:
+  \[
+  Y_k = f_k(Y_{k-1}, I_k(t)), \quad k = 1, \dots, N
+  \]
+  where \( Y_0 = C_{\text{old}} \), \( I_k(t) \) is the external input (e.g., EEG signal modeled as a 10 Hz alpha wave with noise), and \( f_k \) is a multilayer perceptron (MLP) neural network.
+
+- **Central Update**: The central state \( C \) is updated using a recurrent neural network (RNN) \( g \):
+  \[
+  C_{\text{new}} = g(Y_N, C_{\text{old}})
+  \]
+  where \( Y_N \) is the output of the final layer across all agents.
+
+- **EEG Integration**: Synthetic EEG signals are generated as:
+  \[
+  I_k(t) = \text{clip}(\sin(2\pi \cdot 10 \cdot t / 1000) + \mathcal{N}(0, 0.1), -1, 1)
+  \]
+  Real EEG data can be integrated via MNE-Python (see `docs/data_loading.md`).
+
+### Theoretical Context
+The cyclic updates of \( C \) and \( Y_k \) mirror feedback mechanisms in the brain, such as thalamocortical loops, while the layered structure aligns with hierarchical processing in neural systems. Philosophically, the model reflects temporal consciousness theories (e.g., Husserl’s retention-protention framework). Future extensions may incorporate comparisons with Global Workspace Theory and Integrated Information Theory.
+
+COS is shared by Umut Elveren (@Umute0) as an open-source project to invite researchers, developers, and enthusiasts to explore, test, and enhance this framework. Join us in bridging AI, neuroscience, and philosophy!
+
+---
+
+## Overview
+COS is an open-source framework for modeling consciousness using a cyclic, layered information processing model. It integrates neural networks and EEG data to simulate continuity and self-awareness. Shared by Umut Elveren for the community to try, test, and contribute!
 
 ## Vision
 - Model consciousness with a cyclic framework inspired by "Don't forget to return to this point."
@@ -14,6 +46,7 @@ COS (Consciousness Simulation Protocol v1.0) is an open-source framework for mod
 - Neural network-based layer updates (MLP) and central state updates (RNN).
 - Synthetic and real EEG data integration.
 - Multi-agent synchronization via JSON messaging.
+- Web interface for running simulations and visualizing results.
 - Compatible with AI Studio pipelines.
 
 ## Installation
@@ -21,15 +54,3 @@ COS (Consciousness Simulation Protocol v1.0) is an open-source framework for mod
 git clone https://github.com/Umute0/cos-consciousness.git
 cd cos-consciousness
 pip install -r requirements.txt
-
-quick start
-from cos.core import COSSimulator
-simulator = COSSimulator(N=3, agent_ids=["AI_001", "AI_002"])
-simulator.run(output_file="cos_output.json")
-
-Contributing
-We welcome contributions! Try the framework, experiment with new models or data, and share your improvements. See CONTRIBUTING.md.
-
-Contact
-
-Email: umutelveren0@gmail.com
