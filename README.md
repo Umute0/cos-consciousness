@@ -2,8 +2,8 @@
 Open-source simulation of consciousness protocol with neural networks and EEG integration.
 # COS-Consciousness
 
-**Developed by Umut Elveren (@Umute0)**  
-COS (Consciousness Simulation Protocol v1.0) is an open-source framework for modeling consciousness using a cyclic, layered information processing model. It integrates neural networks and EEG data to simulate continuity and self-awareness. Shared by Umut Elveren for the community to try, test, and contribute!
+**Developed by (@Umute0)**  
+COS (Consciousness Simulation Protocol v1.0) is an open-source framework for modeling consciousness using a cyclic, layered information processing model. It integrates neural networks and EEG data to simulate continuity and self-awareness. Sharedfor the community to try, test, and contribute!
 
 ## Vision
 - Model consciousness with a cyclic framework inspired by "Don't forget to return to this point."
