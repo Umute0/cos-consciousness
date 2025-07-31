@@ -30,7 +30,7 @@ The COS protocol simulates consciousness via a multi-agent system with \( N \) l
 ### Theoretical Context
 The cyclic updates of \( C \) and \( Y_k \) mirror feedback mechanisms in the brain, such as thalamocortical loops, while the layered structure aligns with hierarchical processing in neural systems. Philosophically, the model reflects temporal consciousness theories (e.g., Husserl’s retention-protention framework). Future extensions may incorporate comparisons with Global Workspace Theory and Integrated Information Theory.
 
-COS is shared by Umut Elveren (@Umute0) as an open-source project to invite researchers, developers, and enthusiasts to explore, test, and enhance this framework. Join us in bridging AI, neuroscience, and philosophy!
+COS is shared for as an open-source project to invite researchers, developers, and enthusiasts to explore, test, and enhance this framework. Join us in bridging AI, neuroscience, and philosophy!
 
 ---
 
