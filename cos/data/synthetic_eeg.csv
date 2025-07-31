@@ -1,0 +1,6 @@
+prev_yank,input
+0.0,0.523
+0.523,0.891
+0.891,0.234
+
+Not: Gerçek veri eklemek için examples/synthetic_data.py çalıştırılabilir. Şimdilik basit bir örnek csv ekle.
