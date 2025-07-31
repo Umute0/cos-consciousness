@@ -27,6 +27,12 @@ The COS protocol simulates consciousness via a multi-agent system with \( N \) l
   \]
   Real EEG data can be integrated via MNE-Python (see `docs/data_loading.md`).
 
+COS-Consciousness evolves into COS-Hierarchy Fusion, integrating a hierarchical structure to enhance consciousness simulation. The new model processes information across levels \( l \), where each layer \( Y_k^{(l)} = f_k^{(l)}(Y_{k-1}^{(l)}, I_k^{(l)}(t)) \) transforms data from lower to higher abstraction levels (\( l = 1 \to L \)), culminating in a meta-representation \( C^{(L)} = g(Y_N^{(L)}, C_{\text{old}}^{(L)}) \). This framework is validated with real EEG data (e.g., alpha and theta waves), tested via test_eeg_hierarchy.py.
+Aims and Proposed Direction:
+Validation: Conduct hierarchical tests with real EEG datasets (e.g., PhysioNet Sleep-EDF) to assess consciousness state differentiation.
+Publication: Release Preprint v2.0 titled “COS-Consciousness: A Hierarchical Simulation Framework for Directed Awareness” on arXiv (q-bio.NC or cs.AI) to establish academic footing.
+Accessibility: Deploy a Gradio demo on HuggingFace Spaces and secure a Zenodo DOI for citable reference.
+Vision: Extend toward quantum layers and ASI alignment, integrating with models like Free Energy Principle and hierarchical reasoning (e.g., Transformers), positioning COS as a bridge between computational neuroscience and synthetic consciousness.
 ### Theoretical Context
 The cyclic updates of \( C \) and \( Y_k \) mirror feedback mechanisms in the brain, such as thalamocortical loops, while the layered structure aligns with hierarchical processing in neural systems. Philosophically, the model reflects temporal consciousness theories (e.g., Husserl’s retention-protention framework). Future extensions may incorporate comparisons with Global Workspace Theory and Integrated Information Theory.
 
